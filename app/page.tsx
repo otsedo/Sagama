@@ -1,9 +1,9 @@
-import AboutUs from "@/components/about-us";
-import Contact from "@/components/contact";
-import Hero from "@/components/hero";
-import NuestrosClientes from "@/components/nuestros-clientes";
-import PerfilEmpresarial from "@/components/perfil-empresarial";
-import TipoMantenimientos from "@/components/tipo-mantenimientos";
+import AboutUs from "@/components/sections/about-us";
+import Contact from "@/components/sections/contact";
+import Hero from "@/components/sections/hero";
+import NuestrosClientes from "@/components/sections/nuestros-clientes";
+import PerfilEmpresarial from "@/components/sections/perfil-empresarial";
+import TipoMantenimientos from "@/components/sections/tipo-mantenimientos";
 
 export default function Home() {
   return (
