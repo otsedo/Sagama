@@ -21,31 +21,15 @@ function Navlinks() {
             >{link.name}</Link>
           </li>
         ))}
-        <a href="" className='p-6 md:p-2 rounded-lg text-white bg-primaryBlue hover:bg-secondaryBlue hover:translate-x-1  xl:text-2xl lg:text-xl md:text-lg'>Solicita Cotización</a>
+        <a href="https://docs.google.com/forms/d/1OQPxRpVGxyHCqgp5sEoQSfafdKZ6mM1xu6cLYJF42jk/viewform?edit_requested=true"
+          target='_blank'
+          className='p-6 md:p-2 rounded-lg text-white bg-primaryBlue hover:translate-x-1  xl:text-2xl lg:text-xl md:text-lg transition-colors duration-300 ease-in-out hover:bg-secondaryBlue'>Solicita Cotización</a>
       </ul >
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <div onClick={() => setNav(!nav)} className="cursor-pointer pr-4 z-10  md:hidden bg-primaryBlue bg-opacity-0 ">
+      <div onClick={() => setNav(!nav)}
+        className="cursor-pointer pr-4 z-30  md:hidden bg-primaryBlue bg-opacity-0 ">
         {nav ?
-          <FaTimes className='bg-primaryBlue text-white opacity-90 ' size={32} />
+          <FaTimes className='bg-primaryBlue text-white opacity-90' size={32} />
           :
           <FaBars size={32} className='text-primaryBlue' />
         }
@@ -53,7 +37,7 @@ function Navlinks() {
 
       {
         nav && (
-          <ul className='flex flex-col gap-8 justify-center items-center absolute top-0 left-0 w-full text-gray-200 h-screen bg-primaryBlue opacity-90'>
+          <ul className='z-20 flex flex-col gap-8 justify-center items-center absolute top-0 left-0 w-full text-gray-200 h-screen bg-primaryBlue opacity-90'>
             {linksArray.map((link) => (
               <li key={link.name} className='bg-primaryBlue my-3'>
                 <Link href={link.href} className={clsx('bg-primaryBlue font-medium text-3xl capitalize', '')}>

@@ -20,3 +20,13 @@ body {
   font-weight: 400;
   color: #555;
 }
+
+/* Estilo por defecto para el ícono de WhatsApp */
+.FaWhatsapp {
+  transition: background-color 0.3s ease;
+}
+
+/* Cambiar el fondo a amarillo cuando se hace hover en el enlace */
+a:hover .FaWhatsapp {
+  background-color: yellow;
+}

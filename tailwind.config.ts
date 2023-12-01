@@ -8,6 +8,12 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        sm: "480px",
+        md: "768px",
+        lg: "1326px",
+        xl: "1800px",
+      },
       colors: {
         darkBlue: "hsl(220, 24%, 7%)",
         lightBlue: "hsl(221, 100%, 91%)",

@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 import Footer from '@/components/footer'
 import Navbar from '@/components/Navbar'
+import { inter } from '@/components/fonts'
 
 
 
@@ -17,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
-      <body>
+      <body className={`${inter.className} `}>
         <Navbar />
         {children}
         <Footer />
